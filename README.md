@@ -5,3 +5,6 @@
 
 # go_wasm
 Go Web Assembly
+
+
+<script src="https://gist.github.com/mchirico/13f2912e1d2ac166f7b58cb0aaf50fa4.js"></script>
