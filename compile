@@ -1,0 +1,5 @@
+#!/bin/bash
+rm *.wasm
+go fmt cmd/addprog.go
+GOARCH=wasm GOOS=js go build -o prog.wasm cmd/addprog.go
+
