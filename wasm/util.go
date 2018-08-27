@@ -16,6 +16,10 @@ func Mtext(i int) string {
 	return fmt.Sprintf("This is a string: %d\n", i)
 }
 
+/*
+    Yes, you need CORS
+
+ */
 // MakeRequest from http://polyglot.ninja/golang-making-http-requests/
 func MakeRequest(url string) string {
 	resp, err := http.Get(url)

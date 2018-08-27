@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gocors-server
+  labels:
+    run: gocors-server
+spec:
+  selector:
+    run: gocors-server
+  ports:
+  - port: 443
+    targetPort: 8080
+  type: LoadBalancer
+  loadBalancerIP: 35.202.88.179
+  
+
+
+

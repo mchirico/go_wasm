@@ -8,4 +8,43 @@ Go Web Assembly
 
 
 
+## Setup
+
+I use the following program, in a parent directory.
+
+```code
+#!/bin/bash
+
+# Change Project Here:
+PROJ=go_wasm
+
+#
+mkdir -p src/github.com
+mkdir -p bin
+
+export GOPATH=`pwd`
+export PATH="$(pwd)/bin:$PATH"
+export GOBIN="$(pwd)/bin"
+if ! [ -x "$(command -v godep)" ]; then
+    echo 'Note: godep is not installed.' >&2
+    echo '... we will install it ..' >&2
+    go get github.com/tools/godep
+
+fi
+
+
+if [ -d "$PWD/src/github.com/$PROJ" ]; then
+    cd "$PWD/src/github.com/$PROJ"
+else
+    echo -e '
+
+       cd src/github.com
+       git clone git@github.com:mchirico/${PROJ}.git
+
+'
+fi
+
+
+```
+
 
