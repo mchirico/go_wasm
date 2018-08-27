@@ -1,0 +1,11 @@
+pig.za261.io
+
+Step 1:
+
+    dep init
+
+
+Step 2:
+
+    gcloud container clusters create pig --enable-network-policy
+    
