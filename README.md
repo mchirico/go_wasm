@@ -10,7 +10,7 @@ Go Web Assembly
 
 ## Setup
 
-I use the following program, in a parent directory.
+I use the following program, in a parent directory, above this project. Note, the git clone command below -- this is above the project.
 
 ```code
 #!/bin/bash
@@ -46,5 +46,8 @@ fi
 
 
 ```
+
+
+
 
 
